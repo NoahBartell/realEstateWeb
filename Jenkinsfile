@@ -8,7 +8,7 @@ node('AppServer2')
     }
     stage('Build and tag')
     {
-        app = docker.build("noahbartell/realEstateWeb")
+        app = docker.build("noahbartell/realestateweb")
     }
     stage('Post to Docker Hub')
     {
