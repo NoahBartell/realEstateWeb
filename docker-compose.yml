@@ -6,4 +6,4 @@ services:
       - '80:80'
     container_name: realestateweb
     volumes:
-    - . /website:/usr/local/apache2/htdocs
+    - . /usr/local/apache2/htdocs
