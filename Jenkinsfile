@@ -8,11 +8,11 @@ node('AppServer2')
     }
     stage('Build and tag')
     {
-        app = docker.build("noahbartell/carweb1")
+        app = docker.build("noahbartell/realEstateWeb")
     }
     stage('Post to Docker Hub')
     {
-        docker.withRegistry('https://registry.hub.docker.com', 'dckr_pat_zsb9hevPixc9OvJtzhR0CrdhlyY')
+        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_credentials')
         {
             app.push("latest")
         }
