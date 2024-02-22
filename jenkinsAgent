@@ -1,0 +1,1 @@
+nohup java -jar agent.jar -jnlpUrl http://172.232.5.107/computer/App%2DServer%2DCWEB2140/jenkins-agent.jnlp -secret b6bd14a6a4af1d58233ec22b96a3ac212a4ca62d4f3a65086013def5b1a75a82 -workDir "/home/appserver/jenkins-workspace" &
